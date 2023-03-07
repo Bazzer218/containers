@@ -1,7 +1,7 @@
 
 ################################################################################
 # example fibonacci number code;
-# you do not have to modify this code in any way
+# do not have to modify this code in any way
 ################################################################################
 
 
@@ -22,7 +22,6 @@ def fibs(n):
 
 def fib_bad(n):
     '''
-    This function computes the n-th fibonacci number,
     but it uses O(n) memory to do so,
     which is bad.
     '''
@@ -101,7 +100,6 @@ class FibIter:
 
 def fib_yield(n=None):
     '''
-    This function returns a generator that computes the first n fibonacci numbers.
     If n is None, then the generator is infinite.
     '''
     if n:
