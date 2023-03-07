@@ -61,12 +61,12 @@ class Fib:
     '''
     def __init__(self, n=None):
         self.n = n
-    
+
     def __repr__(self):
-        if self.n == None:
+        if self.n is None:
             return "Fib()"
         return f'Fib({self.n})'
-    
+
     def __iter__(self):
         return FibIter(self.n)
 
@@ -75,12 +75,11 @@ class FibIter:
     '''
     This is the iterator helper class for the Fib class.
     '''
-    def __init__(self,n):
+    def __init__(self, n):
         self.n = n
         self.f1 = 1
         self.f0 = 1
         self.i = 0
-       
 
     def __next__(self):
         if self.n:
@@ -88,12 +87,12 @@ class FibIter:
                 raise StopIteration
             else:
                 x = self.f0
-                self.f0,self.f1 = self.f1, self.f0 + self.f1
+                self.f0, self.f1 = self.f1, self.f0 + self.f1
                 self.i += 1
                 return x
         else:
             x = self.f0
-            self.f0,self.f1 = self.f1, self.f0+self.f1
+            self.f0, self.f1 = self.f1, self.f0 + self.f1
             self.i += 1
             return x
 
@@ -125,4 +124,4 @@ def fib_yield(n=None):
             f0 = f1
             f1 = f2
             i += 1
-            yield f2    
+            yield f2
