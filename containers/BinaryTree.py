@@ -100,15 +100,6 @@ class BinaryTree():
     def to_list(self, traversal_type):
         '''
         This function is similar to the print_tree function,
-        but instead of printing the tree,
-        it returns the contents of the tree as a list.
-
-        rather than print them whenever possible.
-        If a function returns its results,
-        we can always print the returned results if we need to visualize them.
-        so it is import to implement it correctly.
-
-        FIXME:
         Implement this function by modifying the _print functions above.
         '''
         if traversal_type == 'preorder':
@@ -165,7 +156,6 @@ class BinaryTree():
         '''
         FIXME:
         Implement this function.
-
         HINT:
         The pseudocode is:
         add 1 for the current node;
@@ -185,7 +175,6 @@ class BinaryTree():
         Returns the height of the tree.
         FIXME:
         Implement this function.
-
         HINT:
         See how the __len__ method calls its helper staticmethod.
         '''
@@ -196,7 +185,6 @@ class BinaryTree():
         '''
         FIXME:
         Implement this function.
-
         HINT:
         The pseudocode is:
         if a left child exists, calculate the _height of the left child;
